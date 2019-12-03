@@ -14,6 +14,8 @@ RUN set -eux; \
     netcat \
     librsvg2-bin \
     imagemagick \
+    zlib1g \
+    zlib1g-dev \
     # Required for SyntaxHighlighting
     python3 \
     ; \

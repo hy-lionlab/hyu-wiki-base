@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  register:
+  upload:
     name: Upload Docker Image to AWS ECR
     runs-on: ubuntu-latest
 

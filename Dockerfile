@@ -1,5 +1,5 @@
 # Ref: https://github.com/wikimedia/mediawiki-docker/blob/master/dev/Dockerfile
-FROM php:7.3-fpm
+FROM php:7.2-fpm
 
 ENV APCU_VERSION 5.1.18
 
@@ -16,6 +16,7 @@ RUN set -eux; \
     imagemagick \
     zlib1g \
     zlib1g-dev \
+    libpng-dev \
     # Required for SyntaxHighlighting
     python3 \
     ; \
@@ -36,6 +37,7 @@ RUN set -eux; \
     mbstring \
     mysqli \
     opcache \
+    gd \
     ; \
     \
     # APCU Installation

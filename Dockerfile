@@ -1,7 +1,7 @@
 # Ref: https://github.com/wikimedia/mediawiki-docker/blob/master/dev/Dockerfile
-FROM php:7.2-fpm
+FROM php:7.3-fpm
 
-ENV APCU_VERSION 5.1.17
+ENV APCU_VERSION 5.1.18
 
 # System dependencies
 RUN set -eux; \
